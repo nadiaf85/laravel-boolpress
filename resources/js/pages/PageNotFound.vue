@@ -1,8 +1,6 @@
 <template>
     <div>
-        <main>
-            <router-view></router-view>
-        </main>
+        <h1>La pagina non è stata trovata</h1>
     </div>
     
 </template>
@@ -10,7 +8,7 @@
 <script>
 
 export default{
-    name: "Main",
+    name: "PageNotFound",
 }
 
 </script>
