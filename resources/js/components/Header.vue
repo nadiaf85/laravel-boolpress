@@ -20,4 +20,10 @@ export default{
 
 <style lang="scss" scoped>
 
+nav li{
+    display: inline-block;
+    padding: 10px;
+    font-size: 18px;
+}
+
 </style>

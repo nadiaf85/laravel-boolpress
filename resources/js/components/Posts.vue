@@ -50,24 +50,33 @@ export default{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: lightgreen;
+    background-color: white;
     padding: 20px;
     margin-bottom: 20px;
     margin-right: 20px;
 
     img{
-        width: 250px;
+        width: 275px;
     }
 
     .title{
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
     padding: 5px;
     }
 
     .category{
-        background-color: lightskyblue;
+        background-color: deepskyblue;
         text-transform: uppercase;
+        font-size: 13px;
+        height: 23px;
+        width: 30%;
+    }
+
+    .tags{
+        background-color: grey;
+        width: 15%;
+        height: 23px;
     }
 
     .tag ul li{
@@ -75,7 +84,7 @@ export default{
     }
 
     .content{
-        font-size: 20px;
+        font-size: 15px;
     }
 }
 }

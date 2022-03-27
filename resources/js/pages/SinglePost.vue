@@ -2,12 +2,13 @@
     <div class="container">
         <div class="info_post">
             <h1 class="title">{{post.title}}</h1>
-        <div v-html="post.content" class="content"></div>
-        <div v-if="post.category" class="category"><strong>Categoria:</strong>{{post.category.name}}</div>
+            <div v-html="post.content" class="content"></div>
+            <div v-if="post.category" class="category"><strong>Categoria:</strong>{{post.category.name}}</div>
             <ul class="tags">
-                <li v-for="tag in post.tags" :key="tag.slug" class="tag"><strong>Tag:</strong>{{tag.name}}</li>
+                <li v-for="tag in post.tags" :key="tag.slug" class="tag"><strong>Tags</strong>{{tag.name}}</li>
             </ul>
-        <img v-if="post.image" :src="`/storage/${post.image}`" :alt="post.title">
+            <img v-if="post.image" :src="`/storage/${post.image}`" :alt="post.title">
+            <li><router-link :to="{ name: 'home'}">Indietro</router-link></li>
         </div>
     </div>
 </template>
@@ -57,7 +58,7 @@ export default{
     }
 
     .title{
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
     padding: 5px;
     }
@@ -67,12 +68,18 @@ export default{
         text-transform: uppercase;
     }
 
-    .tag ul li{
+    .tags{
+        text-transform: uppercase;
+        background-color: grey;
+
+        .tags ul li{
         color: black;
+        background-color: brown;
+    }
     }
 
     .content{
-        font-size: 20px;
+        font-size: 15px;
     }
 }
 }
