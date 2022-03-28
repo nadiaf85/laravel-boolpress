@@ -16,4 +16,10 @@ export default{
 
 <style lang="scss" scoped>
 
+h1{
+    text-transform: uppercase;
+    text-align: center;
+    color: #191970;
+}
+
 </style>

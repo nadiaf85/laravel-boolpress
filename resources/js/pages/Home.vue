@@ -23,5 +23,9 @@ export default{
 
 h1{
     text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    color: #191970;
 }
+
 </style>

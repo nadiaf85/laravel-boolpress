@@ -4,9 +4,9 @@
             <img v-if="post.image" :src="`/storage/${post.image}`" :alt="post.title">
             <div class="title">{{post.title}}</div>
 
-            <div v-if="post.category" class="category">{{post.category.name}}</div>
+            <div v-if="post.category" class="category">{{post.category.title}}</div>
             <ul class="tags">
-                <li v-for="tag in post.tags" :key="tag.slug" class="tag">{{tag.name}}</li>
+                <li v-for="tag in post.tags" :key="tag.slug" class="tag">#{{tag.title}}</li>
             </ul>
 
             <p class="content">{{post.content}}</p>
@@ -69,18 +69,29 @@ export default{
         background-color: deepskyblue;
         text-transform: uppercase;
         font-size: 13px;
-        height: 23px;
-        width: 30%;
+        height: 16px;
+        width: 27%;
+        padding: 5px;
+        margin: 10px 0;
+        border-radius: 10px;
+        text-align: center;
     }
 
     .tags{
-        background-color: grey;
-        width: 15%;
-        height: 23px;
-    }
+        list-style: none;
+        margin: 10px 0;
+        padding: 0;
+        display: flex;
 
-    .tag ul li{
-        color: black;
+        .tag{
+            background-color: #008b8b;
+            color: white;
+            padding: 5px;
+            margin: 0 5px;
+            border-radius: 5px;
+            font-size: 12px;
+            // font-weight: bold;
+        }
     }
 
     .content{
