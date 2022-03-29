@@ -2,8 +2,8 @@
     <div>
         <header>
             <nav>
-                <li><router-link :to="{ name: 'home' }">HOME</router-link></li>
-                <li><router-link :to="{ name: 'about' }">CHI SIAMO</router-link></li>
+                <li><router-link class="link" :to="{ name: 'home' }">HOME</router-link></li>
+                <li><router-link class="link" :to="{ name: 'about' }">CHI SIAMO</router-link></li>
             </nav>
             
         </header>
@@ -29,10 +29,17 @@ nav{
 
     li{
         list-style: none;
-        // text-decoration: none;
         height: 100%;
         line-height: 90px;
         margin: 0 10px;
+    }
+
+    .link{
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: #191970;
+        padding: 25px;
     }
 }
 

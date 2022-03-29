@@ -2189,7 +2189,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "nav[data-v-1f42fb90] {\n  width: 100%;\n  height: 100%;\n  margin: auto;\n  display: flex;\n  background-color: lightskyblue;\n}\nnav li[data-v-1f42fb90] {\n  list-style: none;\n  height: 100%;\n  line-height: 90px;\n  margin: 0 10px;\n}", ""]);
+exports.push([module.i, "nav[data-v-1f42fb90] {\n  width: 100%;\n  height: 100%;\n  margin: auto;\n  display: flex;\n  background-color: lightskyblue;\n}\nnav li[data-v-1f42fb90] {\n  list-style: none;\n  height: 100%;\n  line-height: 90px;\n  margin: 0 10px;\n}\nnav .link[data-v-1f42fb90] {\n  text-decoration: none;\n  text-transform: uppercase;\n  font-family: \"Lucida Sans\", \"Lucida Sans Regular\", \"Lucida Grande\", \"Lucida Sans Unicode\", Geneva, Verdana, sans-serif;\n  color: #191970;\n  padding: 25px;\n}", ""]);
 
 // exports
 
@@ -2265,7 +2265,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".container[data-v-67cb3b51] {\n  width: 100%;\n  display: flex;\n  justify-content: center;\n  flex-wrap: wrap;\n}\n.container .info_post[data-v-67cb3b51] {\n  width: 80%;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  text-align: center;\n  padding: 20px;\n  margin-bottom: 20px;\n  margin-right: 20px;\n}\n.container .info_post img[data-v-67cb3b51] {\n  width: 80%;\n}\n.container .info_post .title[data-v-67cb3b51] {\n  font-size: 30px;\n  font-weight: bold;\n  padding: 5px;\n}\n.container .info_post .category[data-v-67cb3b51] {\n  background-color: lightskyblue;\n  text-transform: uppercase;\n}\n.container .info_post .tags[data-v-67cb3b51] {\n  list-style: none;\n  margin: 10px 0;\n  padding: 0;\n  display: flex;\n}\n.container .info_post .tags .tag[data-v-67cb3b51] {\n  background-color: #008b8b;\n  color: white;\n  padding: 5px;\n  margin: 0 5px;\n  border-radius: 5px;\n  font-size: 12px;\n}\n.container .info_post .content[data-v-67cb3b51] {\n  font-size: 15px;\n}", ""]);
+exports.push([module.i, ".container[data-v-67cb3b51] {\n  width: 100%;\n  display: flex;\n  justify-content: center;\n  flex-wrap: wrap;\n}\n.container .info_post[data-v-67cb3b51] {\n  width: 80%;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  text-align: center;\n  padding: 20px;\n  margin-bottom: 20px;\n  margin-right: 20px;\n}\n.container .info_post img[data-v-67cb3b51] {\n  width: 80%;\n  margin-bottom: 20px;\n}\n.container .info_post .title[data-v-67cb3b51] {\n  font-size: 30px;\n  font-weight: bold;\n  padding: 5px;\n}\n.container .info_post .category[data-v-67cb3b51] {\n  background-color: lightskyblue;\n  text-transform: uppercase;\n}\n.container .info_post .tags[data-v-67cb3b51] {\n  list-style: none;\n  margin: 10px 0;\n  padding: 0;\n  display: flex;\n}\n.container .info_post .tags .tag[data-v-67cb3b51] {\n  background-color: #008b8b;\n  color: white;\n  padding: 5px;\n  margin: 0 5px;\n  border-radius: 5px;\n  font-size: 12px;\n}\n.container .info_post li[data-v-67cb3b51] {\n  list-style: none;\n  text-transform: uppercase;\n}\n.container .info_post .back[data-v-67cb3b51] {\n  text-transform: uppercase;\n}\n.container .info_post .content[data-v-67cb3b51] {\n  font-size: 15px;\n}", ""]);
 
 // exports
 
@@ -3566,9 +3566,11 @@ var render = function () {
         _c(
           "li",
           [
-            _c("router-link", { attrs: { to: { name: "home" } } }, [
-              _vm._v("HOME"),
-            ]),
+            _c(
+              "router-link",
+              { staticClass: "link", attrs: { to: { name: "home" } } },
+              [_vm._v("HOME")]
+            ),
           ],
           1
         ),
@@ -3576,9 +3578,11 @@ var render = function () {
         _c(
           "li",
           [
-            _c("router-link", { attrs: { to: { name: "about" } } }, [
-              _vm._v("CHI SIAMO"),
-            ]),
+            _c(
+              "router-link",
+              { staticClass: "link", attrs: { to: { name: "about" } } },
+              [_vm._v("CHI SIAMO")]
+            ),
           ],
           1
         ),
@@ -3839,9 +3843,11 @@ var render = function () {
       _c(
         "li",
         [
-          _c("router-link", { attrs: { to: { name: "home" } } }, [
-            _vm._v("Indietro"),
-          ]),
+          _c(
+            "router-link",
+            { staticClass: "back", attrs: { to: { name: "home" } } },
+            [_vm._v("Indietro")]
+          ),
         ],
         1
       ),

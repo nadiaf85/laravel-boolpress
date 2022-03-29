@@ -8,7 +8,7 @@
                 <li v-for="tag in post.tags" :key="tag.slug" class="tag">#{{tag.title}}</li>
             </ul>
             <img v-if="post.image" :src="`/storage/${post.image}`" :alt="post.title">
-            <li><router-link :to="{ name: 'home'}">Indietro</router-link></li>
+            <li><router-link class="back" :to="{ name: 'home'}">Indietro</router-link></li>
         </div>
     </div>
 </template>
@@ -55,6 +55,7 @@ export default{
 
     img{
         width: 80%;
+        margin-bottom: 20px;
     }
 
     .title{
@@ -81,8 +82,16 @@ export default{
             margin: 0 5px;
             border-radius: 5px;
             font-size: 12px;
-            // font-weight: bold;
         }
+    }
+
+    li{
+        list-style: none;
+        text-transform: uppercase;
+    }
+
+    .back{
+        text-transform: uppercase;
     }
 
     .content{

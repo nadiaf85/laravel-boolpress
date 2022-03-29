@@ -90,7 +90,6 @@ export default{
             margin: 0 5px;
             border-radius: 5px;
             font-size: 12px;
-            // font-weight: bold;
         }
     }
 
